@@ -1,0 +1,274 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+	font: inherit;
+    box-sizing: border-box;
+    background-color:#00BFFF;
+    background-size: cover;
+    width: 100%;
+}
+.logo{
+    padding: 0% 5%;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 0% 1%;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0% 1%;
+
+}
+.contact{
+    padding: 5% 0%;
+}
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer p{
+    font-size: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0% 1%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    display: block;
+}
+.number{
+    display: block;
+}
+.education{
+    padding: 5% 0%;
+}
+.edu-images{
+    display: flex;
+    gap: 5rem;
+    padding: 0% 10%;
+}
+.edu-images img{
+    width: 50%;
+    height: auto;
+}
+.education-part1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.education-part2{
+    padding: 10% 0%;
+}
+.education-part2 h2{
+    font-size: 45px;
+}
+.moments-images img{
+    padding: 5% 0%;
+    width: 35%;
+    height: auto;
+}
+.moments-images{
+    width: 100%; 
+    white-space: nowrap; 
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.edu-info h2{
+    font-size: 3rem;
+}
+.edu-info{
+
+    font-size: 1rem;
+}
+.home-main-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.welcome{
+    padding: 10%;
+    width: 100%;
+}
+.welcome h1{
+    font-size: 4rem;
+}
+.welcome p{
+    font-size: 1rem;
+}
+main {
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #333;
+}
+.hobbies-gallery img{
+    width:100%;
+    height: auto;
+}
+.profile-pic {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+.hobbies{
+    padding: 30px 20px;
+}
+
+.family-grid p{
+    font-size: large;
+}
+.family-grid, .hobbies-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.family-grid{
+    padding: 20px 0px;
+}
+.family-text h1{
+    font-size: 3rem;
+}
+.family-text p{
+    font-size: 1rem;
+}
+.family-member, .hobby-item {
+    flex: 1 1 45%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.family-member img, .hobby-item img {
+    max-width: 100%;
+    height: fit-content;
+}
+.social-links a{
+    color:#333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+@media (max-width: 1024px){
+    body{
+        font-size: 80%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .family-grid, .hobbies-gallery, .edu-images {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 1280px){
+    .edu-images img{
+        width: 50%;
+        height: autos;
+    }
+    
+}
+@media (max-width: 568px) {
+    body{
+        font-size: 50%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .family-grid, .hobbies-gallery, .edu-images {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .edu-info h2{
+        font-size: 1.5rem;
+    }
+    .edu-info{
+        font-size: 0.6rem;
+    }
+    
+    .home-main {
+        padding: 10px;        
+    }
+    
+    .welcome h1 {
+        font-size: 2rem;    
+    }
+
+    .welcome p {
+        font-size: 0.6rem;   
+    }
+    .education-part1{
+        gap: 3rem;
+    }
+    .edu-images img{
+        width: 100%;
+        height: auto;
+    }
+    .edu-images{
+        display: flex;
+        gap: 3rem;
+        padding: 0% 10%;
+    }
+    .family-text h1{
+        font-size: 1.5rem;
+    }
+    .family-text p{
+        font-size: 0.6rem;
+    }
+}
